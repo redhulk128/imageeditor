@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Image Editor</title>
+    <link rel="shortcut icon" href="./imageeditor.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6939139394714389"
+        crossorigin="anonymous"></script>
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-6939139394714389?ers=1"
+        nonce="6bKWIxprhaDanamaxS1IUA"></script>
+    <script
+        nonce="6bKWIxprhaDanamaxS1IUA">(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();</script>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        background-color: #595757e3;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer {
+        background-color: transparent;
+        color: #000000;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    @media (min-width: 768px) {
+        .logo {
+            font-size: 32px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container disable">
+        <div class="header">
+            <h1 class="logo">Simple Image Editor</h1>
+        </div>
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title">Filters</label>
+                    <div class="options">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="saturation">Saturation</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayscale">Grayscale</button>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brighteness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label class="title">Rotate & Flip</label>
+                    <div class="options">
+                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                        <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                        <button id="vertical"><i class='bx bx-reflect-horizontal'></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-img">
+                <img src="image-placeholder.svg" alt="preview-img">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Reset Filters</button>
+            <div class="footer">
+                <p>&copy; a <span style="color: red;">red</span><span style="color: rgb(0, 255, 0);">hulk</span>.in
+                    product</p>
+            </div>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6939139394714389"
+        crossorigin="anonymous"></script>
+    <!-- RedTube -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6939139394714389" data-ad-slot="5148945046"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</body>
+
+</html>
